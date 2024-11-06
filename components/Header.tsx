@@ -4,10 +4,10 @@ import { ClerkLoaded, SignedIn, SignInButton, UserButton, useUser } from '@clerk
 import Link from 'next/link';
 import Form from 'next/form';
 import { PackageIcon, TrolleyIcon } from '@sanity/icons';
+import { useParams } from 'next/navigation';
 
 const Header = () => {
     const { user } = useUser();
-
     const createClerkPasskey = async () => {
         try {
             const response = await user?.createPasskey();
@@ -35,6 +35,7 @@ const Header = () => {
                 <input 
                     type="text" 
                     name='query'
+                    // value={}
                     placeholder='Search for products...'
                     className='bg-gray-100 text-gray-800 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 border w-full max-w-4xl'
                 />
