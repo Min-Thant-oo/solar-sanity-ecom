@@ -91,8 +91,8 @@ export const orderType = defineType({
         }),
         defineField({
             name: "currency",
-            title: "Currencystring",
-            type: "number",
+            title: "Currency",
+            type: "string",
             validation: (Rule) => Rule.required(),
         }),
         defineField({

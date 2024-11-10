@@ -106,7 +106,7 @@ export type Order = {
     _key: string;
   }>;
   totalPrice?: number;
-  currency?: number;
+  currency?: string;
   amountDiscount?: number;
   status?: "pending" | "paid" | "shipped" | "delivered" | "cancelled";
   orderDate?: string;
