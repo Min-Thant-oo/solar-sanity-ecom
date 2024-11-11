@@ -72,7 +72,7 @@ const Orders = async () => {
                                     </div>
 
                                     {order.amountDiscount ? (
-                                        <div className="mt-4 p-3 sm:p-4 bg-red-500 rounded-lg">
+                                        <div className="mt-4 p-3 sm:p-4 bg-red-50 rounded-lg">
                                             <p className="text-red-600 font-medium mb-1 text-sm sm:text-base">
                                                 Discount Applied:{" "}
                                                 {formatCurrency(order.amountDiscount, order.currency)}
