@@ -88,7 +88,7 @@ async function createOrderInSanity(session: Stripe.Checkout.Session) {
         stripePaymentIntentId: payment_intent,
         customerName,
         stripeCustomerId: customer,
-        // clerkUserId: clerkUserId,
+        clerkUserId: clerkUserId,
         email: customerEmail,
         currency,
         amountDiscount: total_details?.amount_discount
